@@ -1,0 +1,28 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    row-gap: 30px;
+
+    &_header {}
+
+    &_tasks {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 100%;
+        padding: 20px 40px;
+
+        .taskTile {
+            display: grid;
+            grid-template-columns: 60% 10% 10% 10%;
+            column-gap: 20px;
+            border-bottom: 2px solid rgb(129, 123, 123);
+        }
+    }
+
+    &_addTaskButton {
+        display: flex;
+    }
+
+}
